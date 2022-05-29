@@ -1,0 +1,44 @@
+@use 'mixins'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: #333
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 3em
+
+#calc
+    @include mixins.calc
+
+#calc h3
+    @include mixins.calc_H3
+
+#operations
+    text-align: right
+
+#previous-operation
+    @include mixins.previous-operation
+
+#current-operation
+    @include mixins.current-operation
+
+#buttons-container
+    @include mixins.buttons-container
+
+#buttons-container button
+    @include mixins.buttons-container-button
+
+#buttons-container .number
+    @include mixins.buttons-containerNumber
+
+#buttons-container button
+    @include mixins.buttons-container_buttonHover
+
+#buttons-container #equal-btn
+    @include mixins.buttons-container-equal-BTN
+    @include mixins.buttons-container-equal-BTN_hover
